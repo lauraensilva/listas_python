@@ -1,0 +1,87 @@
+'''#exercicio1
+numero1=float(input('insira o primeiro valor'))
+numero2=float(input('insira o segundo valor'))
+numero3=float(input('insira o terceiro valor'))
+numero4=float(input('insira o quarto valor'))
+media=(numero1+numero2*2+numero3*3+numero4*4)/10
+print('a media dos valores é:',media)
+#exercicio2
+cat1=float(input('digite o valor do cateto'))
+cat2=float(input('digite o valor do cateto'))
+hip=(cat1**2+cat2**2)**(1/2)
+print('a hipotenusa é igual a:',hip)
+#exercicio3
+nome=str(input('insira o nome do produto \n'))
+valor=float(input('insira o valor do produto \n'))
+desconto=valor*0.14
+print('o valor final do produto',nome,'será de:',valor-desconto,'reais')
+#exercicio4
+nome=str(input('nome do produto \n'))
+valor=float(input('digite o valor do produto \n'))
+desconto=valor*0.12
+print('o produto',nome,'recebeu desconto de',desconto,'reais, e o valor final será de',valor-desconto,'reais')
+#exercicio5
+lado=float(input('insira o tamanho do lado do quadrado \n'))
+perimetro=lado*4
+area=lado**2
+print('o perímetro do quadrado é igual a:',perimetro,'e a area é igual a:',area)
+#exercicio6
+seg=int(input('digite a quantidade de segundos que deseja converter \n'))
+min=seg/60
+hora=min/60
+dia=hora/24
+print(seg,'segundos representam',min,'minutos,',hora,'horas e',dia,'dias')
+#exercicio7
+ano_nascimento=int(input('digite o ano de seu nascimento \n'))
+idade=2023-ano_nascimento
+idade2030=2030-ano_nascimento
+print('sua idade é:',idade,'anos e em 2030 você terá',idade2030,'anos')
+#exercicio8
+peso=float(input('digite seu peso em kg'))
+altura=float(input('digite sua altura em metros'))
+imc=peso/altura**2
+sexo=str(input('digite F para sexo feminino e M para masculino'))
+if sexo=='F':
+    if imc<19:   
+        print('Atenção! Sua saúde está em risco. Seu IMC é de:',imc,'e você está abaixo do peso ideal.')
+    elif 19<=imc>23.9:
+        print('Parabéns! Sua saúde está em dia. Seu imc é de:',imc,'e você está na faixa de peso ideal.')
+    elif 23.9<=imc>28.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade leve')
+    elif 28.9<=imc>38.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade moderada')
+    else imc>38.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade mórbida')
+elif sexo=='M':
+    if imc<20:   
+        print('Atenção! Sua saúde está em risco. Seu IMC é de:',imc,'e você está abaixo do peso ideal.')
+    elif 20<=imc>24.9:
+        print('Parabéns! Sua saúde está em dia. Seu imc é de:',imc,'e você está na faixa de peso ideal.')
+    elif 24.9<=imc>29.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade leve')
+    elif 29.9<=imc>39.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade moderada')
+    else imc>=39.9:
+        print('Atenção! Sua saúde está em risco. Seu imc é de:',imc,'e você está com obesidade mórbida')
+else:
+    print('por favor digite corretamente')
+#exerciciohithub
+numero=int(input('insira um numero inteiro'))
+teste=numero%2
+if teste==0:
+    print('o numero inserido é par')
+else:
+    print('o número inserido é impar')
+#github2'''
+notas = []
+contador = 1
+
+while contador < 5:
+    notas.append(float(input(f'Informe a {contador}a nota: ')))
+    contador += 1
+
+maior_nota = max(notas)
+menor_nota = min(notas)
+media = sum(notas) / len(notas)
+
+print(f'A média final é {media:.2f}. A sua maior nota foi {maior_nota:.2f} e a menor foi {menor_nota:.2f}')
